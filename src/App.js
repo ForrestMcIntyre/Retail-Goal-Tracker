@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
 import Post from './Post/Post.js';
+import PostList from './PostList.js';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Post />
-        <Comments />
+        <PostList />
       </div>
     );
   }
