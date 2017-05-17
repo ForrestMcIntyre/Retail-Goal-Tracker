@@ -4,7 +4,7 @@ import PostListView from './PostListView.js';
 class PostList extends Component {
   constructor() {
     super();
-    this.state = { posts: '' };
+    this.state = { posts: [] };
     this.stories = [];
   }
 
