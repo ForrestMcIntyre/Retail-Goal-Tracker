@@ -43,7 +43,23 @@ class PostList extends Component {
   }
 
   render() {
-    return <PostListView posts={this.state.posts} />;
+    console.log(this.state.posts);
+    const elements = this.state.posts.map((post) => {
+      debugger;
+      console.log(this.state.posts);
+      console.log(post);
+      return(
+      <div>
+        <p>{post.title}</p>
+        <p>This is a test</p>
+      </div>)
+    });
+
+    return(
+      <div className="Posts">
+        {elements}
+      </div>
+    )
   }
 }
 
